@@ -23,6 +23,13 @@ module.exports = appInfo => {
     // myAppName: 'egg',
   };
 
+  config.view = {
+    defaultViewEngine: 'nunjucks',
+    mapping: {
+      '.html': 'nunjucks',
+    },
+  };
+
   return {
     ...config,
     ...userConfig,

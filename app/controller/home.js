@@ -29,8 +29,6 @@ class HomeController extends Controller {
       const res = await ctx.service.spider.infoProcess(seatInfo);
       console.log(res);
     });
-
-
   }
 }
 
